@@ -10,13 +10,13 @@
 执行以下命令安装最新稳定版本:
 
 ```bash
-composer require cyd622/WechatApp
+composer require cyd622/wechat-app
 ```
 
 或者添加如下信息到你的 `composer.json` 文件中 :
 
 ```json
-"cyd622/WechatApp": "1.*"
+"cyd622/wechat-app": "1.*"
 ```
 
 然后注册服务提供者到 Laravel中 具体位置：`/config/app.php` 中的 `providers` 数组:
