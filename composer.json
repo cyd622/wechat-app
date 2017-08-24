@@ -1,0 +1,22 @@
+{
+    "name": "cyd622/wechat-app",
+    "description": "A WeChat applet (xiaochengxu) plugins for Laravel 5",
+    "keywords": ["微信小程序", "wechat-app", "WeChat", "OAuth", "login"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tony wang",
+            "email": "luffywang622@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "WechatApp\\": "src/"
+        }
+    }
+}
