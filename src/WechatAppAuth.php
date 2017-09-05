@@ -55,7 +55,8 @@ class WechatAppAuth
                 'message' => 'encryptedData 解密失败'
             ];
         }
-        return $decodeData;
+        // 解密后返回的是JSON,这里统一转换Array
+        return json_encode($decodeData,1);
     }
 
     /**
