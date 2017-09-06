@@ -54,7 +54,7 @@ class WechatAppAuth
             ];
         }
         // 解密后返回的是JSON,这里统一转换Array
-        return json_encode($decodeData,1);
+        return json_decode($decodeData,1);
     }
 
     /**
