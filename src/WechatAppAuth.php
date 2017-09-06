@@ -22,9 +22,7 @@ class WechatAppAuth
     {
         $this->appId = $appId;
         $this->secret = $secret;
-        /*$this->appId = config('wechatApp.appid', '');
-        $this->secret = config('wechatApp.secret', '');*/
-        $this->code2session_url = config('wechatApp.code2session_url', '');
+        $this->code2session_url = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code";
     }
 
 

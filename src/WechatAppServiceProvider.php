@@ -27,13 +27,7 @@ class WechatAppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config_file = __DIR__ . '/../config/config.php';
 
-        $this->mergeConfigFrom($config_file, 'wechatApp');
-
-        $this->publishes([
-            $config_file => config_path('wechatApp.php')
-        ], 'wechatApp');
     }
 
     /**
